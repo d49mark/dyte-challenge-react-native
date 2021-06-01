@@ -31,19 +31,37 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* dyte_challenge_react_nativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dyte_challenge_react_nativeTests.m; sourceTree = "<group>"; };
 		02D57A96680895DA4A80B7ED /* Pods-dyte_challenge_react_native.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dyte_challenge_react_native.debug.xcconfig"; path = "Target Support Files/Pods-dyte_challenge_react_native/Pods-dyte_challenge_react_native.debug.xcconfig"; sourceTree = "<group>"; };
+		1040D196844E4EE09C326932 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		12295B40E9D345748DA9369E /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* dyte_challenge_react_native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dyte_challenge_react_native.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = dyte_challenge_react_native/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = dyte_challenge_react_native/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = dyte_challenge_react_native/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = dyte_challenge_react_native/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = dyte_challenge_react_native/main.m; sourceTree = "<group>"; };
+		158A5EE08CF3455495EE8D08 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		184DE40E460F40E0A8E75CC8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		1D54511AC1C34F219FD46A9A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		232D66DBFF7B44B68A716257 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		2AD38C51266200EC0056182B /* libRNGL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD38C53266200F30056182B /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNSVG.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4427B39751524F11A6752E4C /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		57206A3A4B9C4E95B6415D69 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		6AC38E0075804029CC7D9F84 /* Pods-dyte_challenge_react_native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dyte_challenge_react_native.release.xcconfig"; path = "Target Support Files/Pods-dyte_challenge_react_native/Pods-dyte_challenge_react_native.release.xcconfig"; sourceTree = "<group>"; };
+		6DED1B9A6E4140D69C763EC5 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		7B56D2D89C4642ADB1989C8F /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = dyte_challenge_react_native/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BBD1374D734B309562EBC8 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		91164A5F6EFF417CB486D546 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		916098AE0136AABB61CC8ACA /* libPods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F98519AC6FB15C679843B6 /* Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.debug.xcconfig"; path = "Target Support Files/Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests/Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6659DB3A4DA4F539BAAE510 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		B0ABB26F36AE45CD8537D80B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		BAD1AF00C2D44DAEBC56A4B5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		ECB3B01D05CD7FE58E6E4107 /* Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.release.xcconfig"; path = "Target Support Files/Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests/Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F92738FC63759F5636047FEC /* libPods-dyte_challenge_react_native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dyte_challenge_react_native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED58DFFCF9D49FB886408BE /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +114,34 @@
 			name = dyte_challenge_react_native;
 			sourceTree = "<group>";
 		};
+		23C2EE99E4264004AAD45ACB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57206A3A4B9C4E95B6415D69 /* AntDesign.ttf */,
+				12295B40E9D345748DA9369E /* Entypo.ttf */,
+				BAD1AF00C2D44DAEBC56A4B5 /* EvilIcons.ttf */,
+				FED58DFFCF9D49FB886408BE /* Feather.ttf */,
+				232D66DBFF7B44B68A716257 /* FontAwesome.ttf */,
+				7B56D2D89C4642ADB1989C8F /* FontAwesome5_Brands.ttf */,
+				6DED1B9A6E4140D69C763EC5 /* FontAwesome5_Regular.ttf */,
+				1D54511AC1C34F219FD46A9A /* FontAwesome5_Solid.ttf */,
+				A6659DB3A4DA4F539BAAE510 /* Fontisto.ttf */,
+				B0ABB26F36AE45CD8537D80B /* Foundation.ttf */,
+				158A5EE08CF3455495EE8D08 /* Ionicons.ttf */,
+				84BBD1374D734B309562EBC8 /* MaterialCommunityIcons.ttf */,
+				184DE40E460F40E0A8E75CC8 /* MaterialIcons.ttf */,
+				4427B39751524F11A6752E4C /* Octicons.ttf */,
+				1040D196844E4EE09C326932 /* SimpleLineIcons.ttf */,
+				91164A5F6EFF417CB486D546 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AD38C53266200F30056182B /* libRNSVG.a */,
+				2AD38C51266200EC0056182B /* libRNGL.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				F92738FC63759F5636047FEC /* libPods-dyte_challenge_react_native.a */,
 				916098AE0136AABB61CC8ACA /* libPods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.a */,
@@ -114,7 +157,6 @@
 				95F98519AC6FB15C679843B6 /* Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.debug.xcconfig */,
 				ECB3B01D05CD7FE58E6E4107 /* Pods-dyte_challenge_react_native-dyte_challenge_react_nativeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +176,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				811774432A685C781D11701A /* Pods */,
+				23C2EE99E4264004AAD45ACB /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -485,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39835F57Z9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = dyte_challenge_react_native/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,7 +540,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyte-challenge-react-native";
 				PRODUCT_NAME = dyte_challenge_react_native;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -511,6 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39835F57Z9;
 				INFOPLIST_FILE = dyte_challenge_react_native/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,7 +566,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dyte-challenge-react-native";
 				PRODUCT_NAME = dyte_challenge_react_native;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -577,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -635,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",

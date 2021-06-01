@@ -7,105 +7,99 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
   View,
+  Image,
+  Text,
 } from 'react-native';
+import {Header} from './src/Components/Header';
+import DocumentScannerView from './src/Container/DocumentScanner';
+import {FloatingAction} from 'react-native-floating-action';
+import {ImageGrid} from './src/Components/ImageGrid';
+import {color} from './src/Assets/ThemeConfig/colors';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+var RNFS = require('react-native-fs');
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+const actions = [
+  {
+    text: 'Add Doc',
+    icon: require('./src/Assets/Images/google-docs.png'),
+    name: 'bt_add',
+    position: 2,
+  },
+];
+export const RefreshDocContext = React.createContext({
+  refreshDocuments: () => {},
+});
+const App = () => {
+  const [documentScanner, setDocumentScanner] = React.useState(false);
+  const [imageArray, setImageArray] = React.useState([]);
+  React.useEffect(() => {
+    refreshDocuments();
+  }, []);
+  const refreshDocuments = () => {
+    RNFS.readDir(RNFS.DocumentDirectoryPath).then(files => {
+      setImageArray(files);
+    });
   };
-
+  if (documentScanner) {
+    return (
+      <RefreshDocContext.Provider value={refreshDocuments}>
+        <DocumentScannerView
+          setDocumentView={() => setDocumentScanner(false)}
+        />
+      </RefreshDocContext.Provider>
+    );
+  }
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.innerContainer}>
+        <StatusBar barStyle={'light-content'} />
         <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+        {imageArray[0]?.name !== 'ReactNativeDevBundle.js' && (
+          <ImageGrid images={imageArray} />
+        )}
+        {(!imageArray && imageArray.length == 0) ||
+          (imageArray[0]?.name == 'ReactNativeDevBundle.js' && (
+            <View style={styles.noDocFound}>
+              <Image
+                style={{width: 200, height: 90, margin: 30}}
+                resizeMethod={'auto'}
+                resizeMode={'contain'}
+                source={require('./src/Assets/Images/files.png')}
+              />
+              <Text style={styles.noDocText}>No Document Found</Text>
+              <Text style={styles.actionText}>{`\nAdd Using Menu`}</Text>
+            </View>
+          ))}
+        <FloatingAction
+          actions={actions}
+          onPressItem={name => {
+            setDocumentScanner(true);
+          }}
+        />
+      </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
+  container: {flex: 1, backgroundColor: color.PRIMARY},
+  innerContainer: {flex: 1, backgroundColor: color.WHITE},
+  noDocFound: {flex: 1, justifyContent: 'center', alignItems: 'center'},
+  noDocText: {
     fontWeight: '600',
+    fontSize: 20,
+    color: 'black',
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  actionText: {
+    fontWeight: '600',
+    fontSize: 15,
+    color: 'black',
+    textAlign: 'center',
   },
 });
 

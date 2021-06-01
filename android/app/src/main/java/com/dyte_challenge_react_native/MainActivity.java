@@ -1,6 +1,8 @@
 package com.dyte_challenge_react_native;
 
 import com.facebook.react.ReactActivity;
+import com.documentscanner.DocumentScannerPackage;
+
 
 public class MainActivity extends ReactActivity {
 
