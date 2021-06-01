@@ -59,22 +59,19 @@ const App = () => {
       <View style={styles.innerContainer}>
         <StatusBar barStyle={'light-content'} />
         <Header />
-        {imageArray[0]?.name !== 'ReactNativeDevBundle.js' && (
-          <ImageGrid images={imageArray} />
+        {imageArray?.length !== 0 && <ImageGrid images={imageArray} />}
+        {(!imageArray || imageArray.length == 0) && (
+          <View style={styles.noDocFound}>
+            <Image
+              style={{width: 200, height: 90, margin: 30}}
+              resizeMethod={'auto'}
+              resizeMode={'contain'}
+              source={require('./src/Assets/Images/files.png')}
+            />
+            <Text style={styles.noDocText}>No Document Found</Text>
+            <Text style={styles.actionText}>{`\nAdd Using Menu`}</Text>
+          </View>
         )}
-        {(!imageArray && imageArray.length == 0) ||
-          (imageArray[0]?.name == 'ReactNativeDevBundle.js' && (
-            <View style={styles.noDocFound}>
-              <Image
-                style={{width: 200, height: 90, margin: 30}}
-                resizeMethod={'auto'}
-                resizeMode={'contain'}
-                source={require('./src/Assets/Images/files.png')}
-              />
-              <Text style={styles.noDocText}>No Document Found</Text>
-              <Text style={styles.actionText}>{`\nAdd Using Menu`}</Text>
-            </View>
-          ))}
         <FloatingAction
           actions={actions}
           onPressItem={name => {

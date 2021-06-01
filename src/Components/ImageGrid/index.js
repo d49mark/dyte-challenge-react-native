@@ -63,13 +63,13 @@ export const ImageGrid = props => {
 
 const styles = StyleSheet.create({
   listContainer: {
-    flex: 1,
+    flexGrow: 1,
     flexWrap: 'wrap',
     flexDirection: 'row',
     padding: size.H7,
   },
   image: {
-    width: Dimensions.get('screen').width / 4,
+    width: isIos ? getScaledSize(5, 'H6') : Dimensions.get('screen').width / 4,
     height: getScaledSize(5, 'H7'),
     borderWidth: 1,
     borderRadius: size.H0,
